@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- Налаштування поведінки в'юпорта -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+
+   <title>Lesson 23-js</title>
+</head>
+
+<body>
+   <header class="header"></header>
+   <main class="page">
+      <div class="page__hommework1 block hommework1">
+         <h3 class="hommework1__tile title">Операторы JAVASCRIPT. "2"+2=22. Уроки JAVASCRIPT с нуля 2020</h3>
+         <ul class="">
+            <li>
+               Варіант 1: помилка в консолі буде строка 35 - 22
+            </li>
+            <li>
+               варіант 2: правильно бо всі оператори крім + перетворють тип даних в number
+            </li>
+            <li>
+               варіант 3: помилка бо декремент( чи ікремент)не можна застосовувати безпосередньо до числа
+            </li>
+            <li>
+               варіант 4: верне 0 , тільк якщо ще раз вивати змінну в console.log то буе 1
+            </li>
+            <li>
+               варіант 5: верне 11 бо з зліва з оцим(&&) вернеться два true а отже 11, а з права вернеться true. потім порівняєм ||(або) і першим true буде 11;
+            </li>
+            <li>
+               варіант 6: верне 0 бо 0 це не Null і не undefindet
+            </li>
+         </ul>
+      </div>
+      <div class="page__hommework2 block hommework2">
+         <h3 class="hommework2__tutle title">IF ELSE в JAVASCRIPT. Условный оператор "?". Примеры IF ELSE. Уроки JAVASCRIPT с нуля 2020</h3>
+         <ul>
+            <li>Варіант 1: верне не првду бо число не дорівнює строці аде в ростому е строгому порівняяні боло б true</li>
+            <li>
+               Варіант 2: верне істину пояснення вище в 1 варанті
+            </li>
+            <li>
+               варіант3: верне true істину бо 91 >"11" це true && 58 < 100( верне truee). а отже з умови вернется останнєє значення true </li>
+            <li>
+               варіант 4: верне істину бо в 1 умові 0 це false а строка в якій є хочаб пробіл не верне false
+            </li>
+         </ul>
+
+      </div>
+      <div class="page__hommework3 block hommework3">
+         <h3 class="hommework3__tutle title">Циклы FOR и WHILE в JavaScript. Директивы break и continue. Уроки JAVASCRIPT с нуля 2020</h3>
+         <ul>
+            <li>
+               Задача 1( Відд 1 до 5)
+               <ul>
+                  <li>(1 спосіб) while (y < 5) { y++ console.log(y); } </li>
+                  <li>(2 спосіб) for (j = 1; j < 6; j++) { console.log(j); }</li>
+                  <li>let f = 1;do {console.log(f);f++;} while (f < 6);</li>
+               </ul>
+            </li>
+            <li>
+               Задача 2; 0 не буде останнім а буже число 1 бо 0 вже верне false а отже не виведеться
+            </li>
+            <li>
+               заддача 3: let num = 0;while (num < 3) { console.log(`Число: ${num}`);num++;} </li>
+            <li>
+               Задача 4: CycleOne: for (let num = 0; num < 2; num++) { for (let size=0; size < 3; size++) { if (size==1) { break CycleOne; } console.log(size); } } </li>
+            <li></li>
+         </ul>
+      </div>
+
+      <div class="page__hommework4 block hommework4">
+         <h3 class="hommework4__tutle title">Строки в JAVASCRIPT. Тип данных string. Типы кавычек, поиск, регистр и получение подстроки.</h3>
+         <ul>
+            <li>Задача 1: не правда щоб все працювало потрібно лапки зворотні поставити у змінній text</li>
+            <li>задача 2: let text = "фрілансер"; console.log(textr[5]);</li>
+            <li>задача 3: не правда адже оператор + не перводить строку в число щоб все зпрацювадл потрібно зробити так let textr = 123 + +"456"; console.log(textr);</li>
+            <li>задача 4: let textr = "фрілансер"; console.log(textr.toUpperCase());</li>
+            <li>Задача 5: let textr = "фрілансер"; console.log(textr.slice(3, 6));</li>
+            <li>Задача 6: веррне false бо починається строка "лан" не з 4 позиції а з 3</li>
+         </ul>
+      </div>
+   </main>
+   <footer class="footer"></footer>
+   <script src="js/script.js"></script>
+</body>
+
+</html>

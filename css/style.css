@@ -1,0 +1,27 @@
+body {
+   background-color: #333;
+   color: rgb(172, 162, 162);
+   padding: 50px;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+.block:not(:last-child) {
+   margin-bottom: 50px;
+}
+.title {
+   font-size: 30px;
+   font-weight: 600;
+   letter-spacing: 3px;
+   line-height: 1.3;
+   color: rgb(185, 240, 114);
+}
+.title:not(:last-child) {
+   margin-bottom: 20px;
+}
+body ul li {
+   line-height: 1.5;
+}
+body ul li:not(:last-child) {
+   margin-bottom: 10px;
+
+}
